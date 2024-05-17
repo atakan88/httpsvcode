@@ -24,9 +24,9 @@ running_executables = []
 
 
 # MQTT broker configuration
-broker = "192.168.56.101"
+broker = "DOCKER-IP"
 port = 1883
-username = "zdp8f37jx8gvj8wlztps"
+username = "TOKEN_1"
 topic_pub = 'v1/devices/me/telemetry'
 
 
@@ -50,7 +50,7 @@ def on_server_side_rpc_request(request_id, request_body):
         
 
 # Create a TBDeviceMqttClient instance with the appropriate connection details
-client = TBDeviceMqttClient("192.168.56.101", username="vnpcnpdfnw3095grry9y")
+client = TBDeviceMqttClient("DOCKER-IP", username="TOKEN_2")
 
 # Başlangıç zamanları
 start_time_1 = time.time()
